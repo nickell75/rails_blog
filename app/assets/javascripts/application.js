@@ -13,6 +13,5 @@
 //= require rails-ujs
 //= require_tree .
 
-#app/assets/javascripts/application.js
-//= require bootstrap-sprockets
+= require bootstrap-sprockets
 = require ckeditor/init
