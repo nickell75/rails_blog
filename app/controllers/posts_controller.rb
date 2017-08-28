@@ -9,8 +9,6 @@ class PostsController < ApplicationController
   end
 
   def create
-  	p "-"*88
-    p params
     @post = Post.new(post_params)
     if @post.save
       flash[:notice] = "Successfully created post!"
@@ -21,12 +19,10 @@ class PostsController < ApplicationController
     end
   end
 
-  # Edit action retrives the post and renders the edit page
   def edit
   	@post = Post.find(params[:id])
   end
 
-  # Update action updates the post with the new information
   def update
     if @post.update_attributes(post_params)
       flash[:notice] = "Successfully updated post!"
@@ -37,14 +33,10 @@ class PostsController < ApplicationController
     end
   end
 
-  # The show action renders the individual post after retrieving the the id
   def show
-  	# p params
-  	# p "*"*88
   	@post = Post.find(params[:id])
   end
 
-  # The destroy action removes the post permanently from the database
   def destroy
     if @post.destroy
       flash[:notice] = "Successfully deleted post!"
