@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   # Edit action retrives the post and renders the edit page
   def edit
-  	@entry = Entry.find(params[:id])
+  	@post = Post.find(params[:id])
   end
 
   # Update action updates the post with the new information
