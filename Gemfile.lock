@@ -190,7 +190,7 @@ DEPENDENCIES
   ckeditor (~> 4.1)
   faker
   jbuilder (~> 2.5)
-  listen (>= 3.0.5, < 3.2)
+  listen
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.3)
